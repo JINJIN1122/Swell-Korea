@@ -28,25 +28,30 @@
             });
             var swiper = new Swiper(".mySwiper-02", {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 20,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
             });
             var swiper = new Swiper(".mySwiper-03", {
-                slidesPerGroup: 1,
                 slidesPerView: 2,
                 spaceBetween: 20,
                 speed: 800,
+                slideToClickedSlide: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
                 autoplay: {
                     delay: 3000, // 3초마다 자동 슬라이드
-                    disableOnInteraction: true
+                    disableOnInteraction: false
                 },
+                loop: true
             });
         }
     </script>
@@ -198,14 +203,18 @@
         </section><!-- .collection end -->
 
         <section class="find-your-swell">
-            <div class="in-logo">
+            <div class="logo">
                 <img src="img/logo.png" alt="">
             </div><!-- .logo end -->
-
+            <div class="inner">
             <!-- Swiper -->
             <div class="swiper mySwiper-02">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
+                        <div class="slide-info">
+                            <h2>BOTTLE</h2>
+                            <p>스웰의 첫 오리지널 제품인 보틀은 뛰어난 성능, 매끈한 실루엣, 다양한 아름다운 디자인 컬렉션으로 당신의 라이프를 특별하게 합니다.</br>우리의 일상에 수분을 공급하기에 이상적이며, 한손에 들어오는 슬림한 디자인으로 휴대하기 좋습니다.</p>
+                        </div><!-- .slide info -->
                         <img src="img/find-your-swell-1.png" alt="">
                     </div><!-- .swiper-slide end -->
 
@@ -217,9 +226,14 @@
                         <img src="img/find-your-swell-3.png" alt="">
                     </div><!-- .swiper-slide end -->
 
+                    <div class="swiper-slide">
+                        <img src="img/find-your-swell-4.png" alt="">
+                    </div><!-- .swiper-slide end -->
+
                 </div><!-- .swiper-wrapper end -->
                 <div class="swiper-pagination"></div>
             </div><!-- .mySwiper-02 end -->
+            </div><!-- .inner end -->
         </section><!-- .find-your-swell end -->
 
         <section class="best-item">
@@ -310,8 +324,8 @@
                     <img src="img/new-in-3.png" alt="">
                     <div class="product-text">
                         <a href="#">
-                        <p class="product-name">프리미엄 텀블러엑스라지 1.18L 하이드레인저블루</p>
-                        <p class="product-price">70,000</p>
+                            <p class="product-name">프리미엄 텀블러엑스라지 1.18L 하이드레인저블루</p>
+                            <p class="product-price">70,000</p>
                         </a>
                         <span class="add-to-cart"><a href="#"><ins>ADD to Cart +</ins></a></span>
                     </div><!-- .product-text end -->
@@ -356,6 +370,27 @@
             </div><!-- .new-in-right end -->
 
         </section><!-- .new-in end -->
+
+        <section class="promotion">
+            <h2 class="promotion-main-text">PROMOTION</h2>
+            <div class="list">
+                <div class="item-01">
+                    <a href="#">
+                        <img src="img/promotion-1.gif" alt="">
+                        <h2 class="promotion-text-01">LIMITED EDITION 20% OFF</h2>
+                        <p>고급스러운 디자인의 시즌 한정 제품들을 20% 할인가에 만나보세요.</p>
+                    </a>
+                </div><!-- .item end -->
+                <div class="item-02">
+                    <a href="#">
+                        <img src="img/promotion-2.jpg" alt="">
+                        <h2 class="promotion-text-02">FIND YOUR S’WELL</h2>
+                        <p>당신만의 ‘스웰’을 찾아보세요!</p>
+                    </a>
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+            <span class="more-btn"><a href="#">MORE +</a></span>
+        </section><!-- .promotion end -->
     </main><!-- .main end -->
 </body>
 
