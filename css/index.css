@@ -1,10 +1,10 @@
 @charset "utf-8";
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Bold.eot');
-    src: url('../font/alexandria/Alexandria-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Bold.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Bold.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Bold.eot');
+    src: url('../font/Alexandria/Alexandria-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Bold.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,10 +12,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-ExtraBold.eot');
-    src: url('../font/alexandria/Alexandria-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-ExtraBold.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-ExtraBold.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-ExtraBold.eot');
+    src: url('../font/Alexandria/Alexandria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-ExtraBold.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-ExtraBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -23,10 +23,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Black.eot');
-    src: url('../font/alexandria/Alexandria-Black.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Black.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Black.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Black.eot');
+    src: url('../font/Alexandria/Alexandria-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Black.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -34,10 +34,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Medium.eot');
-    src: url('../font/alexandria/Alexandria-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Medium.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Medium.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Medium.eot');
+    src: url('../font/Alexandria/Alexandria-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Medium.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -45,10 +45,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Regular.eot');
-    src: url('../font/alexandria/Alexandria-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Regular.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Regular.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Regular.eot');
+    src: url('../font/Alexandria/Alexandria-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Regular.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -56,10 +56,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-SemiBold.eot');
-    src: url('../font/alexandria/Alexandria-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-SemiBold.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-SemiBold.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-SemiBold.eot');
+    src: url('../font/Alexandria/Alexandria-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-SemiBold.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -67,10 +67,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-ExtraLight.eot');
-    src: url('../font/alexandria/Alexandria-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-ExtraLight.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-ExtraLight.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-ExtraLight.eot');
+    src: url('../font/Alexandria/Alexandria-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-ExtraLight.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -78,10 +78,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Light.eot');
-    src: url('../font/alexandria/Alexandria-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Light.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Light.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Light.eot');
+    src: url('../font/Alexandria/Alexandria-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Light.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -89,10 +89,10 @@
 
 @font-face {
     font-family: 'Alexandria';
-    src: url('../font/alexandria/Alexandria-Thin.eot');
-    src: url('../font/alexandria/Alexandria-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../font/alexandria/Alexandria-Thin.woff2') format('woff2'),
-        url('../font/alexandria/Alexandria-Thin.woff') format('woff');
+    src: url('../font/Alexandria/Alexandria-Thin.eot');
+    src: url('../font/Alexandria/Alexandria-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../font/Alexandria/Alexandria-Thin.woff2') format('woff2'),
+        url('../font/Alexandria/Alexandria-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -546,4 +546,5 @@ body{
 .new-in .swiper-button-next:after,
 .new-in .swiper-rtl .swiper-button-prev:after{
     display: none;
+
 }
