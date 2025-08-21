@@ -122,7 +122,6 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
     background-color: #00BBFF;
 }
 .header .top-bar{
@@ -141,7 +140,6 @@ body{
     z-index: 999;
 }
 .header .main-bar{
-    max-width: 1920px;
     width: 100%;
     height: 70px;
     margin: 0 auto;
@@ -159,12 +157,14 @@ body{
     column-gap: 24px;
 }
 .header .main-bar .left-nav .gnb li{
+    display: block;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
 .header .main-bar .logo{
     position: absolute;
+    display: flex;
     left: 50%;
     transform: translate(-50%);
 }
@@ -174,6 +174,7 @@ body{
     column-gap: 24px;
 }
 .header .main-bar .right-nav .gnb li{
+    display: block;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
@@ -472,13 +473,13 @@ body{
     transform: translateY(calc(100% - 8rem));
   }
 }
-
 .main .new-in{
     width: 1879px;
-    margin-left: 80px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: translate(80px, 0);
     margin-bottom: 160px;
 }
 .new-in .new-in-left .new-in-text{
@@ -667,17 +668,20 @@ body{
 .swell-story .list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
 }
-.swell-story .item-01{
+.swell-story .item{
+    width: 616px;
+    height: 100%;
+}
+.swell-story .item:nth-child(1){
     width: 616px;
     height: 494px;
     background-color: #0034FF;
     border-radius: 30px;
     position: relative;
 }
-.swell-story .item-01 .story-text-01{
+.swell-story .item:nth-child(1) .story-text-01{
     position: absolute;
     padding: 20px 20px;
     bottom: 0;
@@ -685,54 +689,54 @@ body{
     font-weight: bold;
     color: #fff;
 }
-.swell-story .item-02{
+.swell-story .item:nth-child(2){
     width: 616px;
     height: 255px;
     position: relative;
 }
-.swell-story .item-02 img{
+.swell-story .item:nth-child(2) img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
 }
-.swell-story .item-02 .story-text-02{
+.swell-story .item:nth-child(2) .story-text-02{
     position: absolute;
     padding: 20px 20px;
     bottom: 0;
     font-size: 18px;
     color: #fff;
 }
-.swell-story .item-03{
+.swell-story .item:nth-child(3) {
     width: 616px;
     height: 255px;
     position: relative;
 }
-.swell-story .item-03 img{
+.swell-story .item:nth-child(3) img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
 }
-.swell-story .item-03 .story-text-03{
+.swell-story .item:nth-child(3) .story-text-03{
     position: absolute;
     padding: 20px 20px;
     bottom: 0;
     font-size: 18px;
     color: #fff;
 }
-.swell-story .item-04{
+.swell-story .item:nth-child(4){
     width: 616px;
     height: 494px;
     position: relative;
 }
-.swell-story .item-04 img{
+.swell-story .item:nth-child(4) img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
 }
-.swell-story .item-04 .story-text-04{
+.swell-story .item:nth-child(4) .story-text-04{
     position: absolute;
     padding: 20px 20px;
     font-size: 48px;
