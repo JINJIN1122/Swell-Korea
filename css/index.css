@@ -113,18 +113,15 @@ a{
 body{
     background-color: #f5f5f5;
     color: #333;
-    position: relative;
     font-family: 'alexandria';
 }
 .header{
     width: 100%;
     height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: #00BBFF;
 }
 .header .top-bar{
+    width: 1920px;
     height: 30px;
     text-align: center;
     line-height: 30px;
@@ -142,31 +139,37 @@ body{
 .header .main-bar{
     width: 100%;
     height: 70px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: blue;
     border-radius: 30px 30px 0 0;
     padding: 0 30px;
-    position: relative;
 }
-.header .main-bar .left-nav .gnb{
+.header .main-bar .logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.header .main-bar .nav_area{
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .main-bar .nav_area .left-nav .gnb{
     display: flex;
     align-items: center;
     column-gap: 24px;
 }
 .header .main-bar .left-nav .gnb li{
-    display: block;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
-.header .main-bar .logo{
-    position: absolute;
+.header .main-bar .nav_area .right-nav{
     display: flex;
-    left: 50%;
-    transform: translate(-50%);
+    justify-content: space-between;
+    gap: 24px;
 }
 .header .main-bar .right-nav .gnb{
     display: flex;
@@ -174,10 +177,18 @@ body{
     column-gap: 24px;
 }
 .header .main-bar .right-nav .gnb li{
-    display: block;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
+}
+.header .main-bar .right-nav .gnb li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header .main-bar .util{
+    display: flex;
+    gap: 24px;
 }
 
 .banner{
@@ -314,21 +325,38 @@ body{
     font-size: 18px;
 }
 
-.find-your-swell{
+.main .find-your-swell{
     width: 100%;
     height: 100vh;
+    margin: 0 auto;
     background: #EEAECA;
     margin-bottom: 160px;
+    position: relative;
 }
-.main .find-your-swell .logo{
-    padding: 50px 40px;
+.main .find-your-swell .inner{
+    width: 1252px;
+    margin: 0 auto;
+    display: flex;
+
+}
+.main .find-your-swell .inner .logo{
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+.main .find-your-swell .swiper.mySwiper-02 {}
+.main .find-your-swell .swiper-wrapper{
+    width: 1176px;
+    margin: 300px auto;
 }
 .main .find-your-swell .slide-info{
-    background-color: #00BBFF;
+    width: 1176px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    top: -150px;
+    text-align: center;
+    margin: 0 auto;
+
 }
 .main .find-your-swell .inner .slide-info h2{
     font-size: 48px;
@@ -337,12 +365,13 @@ body{
 .main .find-your-swell .slide-info p{
     font-size: 20px;
 }
-.main .find-your-swell .swiper-wrapper{
-    margin: 60px auto;
-}
 .main .find-your-swell .swiper-slide{
-    background-color: #0034FF;
-    position: relative;
+    width: 163px;
+    height: 504px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
 }   
 .main .find-your-swell .swiper-slide:nth-child(1) img{
     width: 156px;
@@ -373,6 +402,28 @@ body{
     border-radius: 30px;
     font-size: 18px;
     border: 1px solid #d9d9d9;
+}
+.best-item .period li:hover{
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #0034FF;
+}
+.best-item .period li a{
+    display: block;
+    height: 100%;
+}
+.best-item .period li:nth-child(1){
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: #0034FF;
 }
 .best-item .list{
     width: 1252px;
@@ -409,6 +460,11 @@ body{
     line-height: 80px;
     border-radius: 50px;
     font-size: 25px;
+}
+.best-item .more-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .animated-title {
@@ -653,17 +709,26 @@ body{
     border-radius: 50px;
     font-size: 25px;
 }
+.promotion .more-btn a{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: block;
+}
 .swell-story{
     width: 1252px;
     margin: 0 auto;
+    margin-bottom: 160px;
 }
 .swell-story h2{
     font-size: 48px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .swell-story p{
     font-size: 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 .swell-story .list{
     display: flex;
@@ -672,7 +737,6 @@ body{
 }
 .swell-story .item{
     width: 616px;
-    height: 100%;
 }
 .swell-story .item:nth-child(1){
     width: 616px;
@@ -729,6 +793,7 @@ body{
     width: 616px;
     height: 494px;
     position: relative;
+    margin-top: -239px;
 }
 .swell-story .item:nth-child(4) img{
     width: 100%;
@@ -742,4 +807,54 @@ body{
     font-size: 48px;
     font-weight: bold;
     color: #fff;
+}
+
+.sns{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    border-radius: 0 0 30px 30px;
+}
+.sns h2{
+    font-size: 48px;
+    color: #0034FF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sns p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sns .swiper-wrapper{
+    transition-timing-function: linear;
+    margin-bottom: 60px;
+}
+.sns .swiper-wrapper .swiper-slide{
+    width: 298px;
+    height: 398px;
+}
+.sns .swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.sns .more-btn{
+    width: 310px;
+    height: 80px;
+    display: block;
+    background-color: #0034FF;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 80px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+.sns .more-btn a{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: block;
 }

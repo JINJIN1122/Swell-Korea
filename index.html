@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -28,10 +28,11 @@
             });
             var swiper = new Swiper(".mySwiper-02", {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: -80,
+                centeredSlides: true,
                 pagination: {
                     el: ".swiper-pagination",
-                    clickable: true,
+                    clickable: false,
                 },
             });
             var swiper = new Swiper(".mySwiper-03", {
@@ -53,6 +54,20 @@
                 },
                 loop: true
             });
+            var swiper = new Swiper(".mySwiper-04", {
+                slidesPerView: 5.5,
+                spaceBetween: 30,
+                delay: 0.3,
+                desableOnInteraction: false,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                speed: 8e3,
+                slidesPerView: "auto",
+                freemode: true
+            });
         }
     </script>
 </head>
@@ -66,34 +81,41 @@
                 </a>
             </div><!-- .top-bar end -->
 
-            <div class="main-bar">
-                <nav class="left-nav">
-                    <ul class="gnb">
-                        <li><a href="#"><img src="img/icon-hamberger.png" alt=" "></a></li>
-                        <li><a href="#">Find Your S'well</a></li>
-                        <li><a href="#">Special</a></li>
-                        <li><a href="#">Best</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Drink</a></li>
-                        <li><a href="#">Life</a></li>
-                    </ul><!-- .gnb end -->
-                </nav><!-- .left-nav end -->
 
-                <div class="logo">
+            <div class="main-bar">
+                <h1 class="logo">
                     <a href="#">
                         <img src="img/logo.png" alt="">
                     </a>
-                </div><!-- .logo end -->
+                </h1><!-- .logo end -->
 
-                <nav class="right-nav">
-                    <ul class="gnb">
-                        <li><a href="#">Brand</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">CLUB S'well</a></li>
-                        <li><a href="#"><img src="img/icon-search.png" alt="검색"></a></li>
-                        <li><a href=""><img src="img/icon-shopping-bag.png" alt="장바구니"></a></li>
-                    </ul><!-- .gnb end -->
-            </div><!-- .right-nav end -->
+                <div class="nav_area">
+                    <nav class="left-nav">
+                        <ul class="gnb">
+                            <li><a href="#"><img src="img/icon-hamberger.png" alt=" "></a></li>
+                            <li><a href="#">Find Your S'well</a></li>
+                            <li><a href="#">Special</a></li>
+                            <li><a href="#">Best</a></li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Drink</a></li>
+                            <li><a href="#">Life</a></li>
+                        </ul><!-- .gnb end -->
+                    </nav><!-- .left-nav end -->
+
+                    <nav class="right-nav">
+                        <ul class="gnb">
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">CLUB S'well</a></li>
+                        </ul><!-- .gnb end -->
+
+                        <ul class="util">
+                            <li><a href="#"><img src="img/icon-search.png" alt="검색"></a></li>
+                            <li><a href=""><img src="img/icon-shopping-bag.png" alt="장바구니"></a></li>
+                        </ul><!-- .util end -->
+                </div><!-- .right-nav end -->
+
+            </div><!-- .nav_area end -->
 
     </div><!-- .main-bar end -->
     </header><!-- .header end -->
@@ -203,35 +225,54 @@
         </section><!-- .collection end -->
 
         <section class="find-your-swell">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div><!-- .logo end -->
-            <!-- Swiper -->
+            <div class="inner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div><!-- .logo end -->
+                <!-- Swiper -->
 
-            <div class="swiper mySwiper-02">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide-info">
-                            <h2>BOTTLE</h2>
-                            <p>스웰의 첫 오리지널 제품인 보틀은 뛰어난 성능, 매끈한 실루엣, 다양한 아름다운 디자인 컬렉션으로 당신의 라이프를 특별하게 합니다.</br>우리의 일상에 수분을 공급하기에 이상적이며, 한손에 들어오는 슬림한 디자인으로 휴대하기 좋습니다.</p>
-                        </div><!-- .slide info -->
-                        <img src="img/find-your-swell-1.png" alt="">
-                    </div><!-- .swiper-slide end -->
+                <div class="swiper mySwiper-02">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-info">
+                                <h2>EATS</h2>
+                                <p>스웰 잇츠는 음식에 필요한 모든 것을 쉽고 친환경적인 방법으로 제공합니다.
+                                    단순히 준비하고, 담고, 나가서 즐겨 보세요. 매일 식사를 가장 스타일리시하고 즐길 수 있도록 합니다.</p>
+                            </div><!-- .slide info -->
+                            <img src="img/find-your-swell-1.png" alt="">
+                        </div><!-- .swiper-slide end -->
 
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-2.png" alt="">
-                    </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <div class="slide-info">
+                                <h2>BOTTLE</h2>
+                                <p>스웰의 첫 오리지널 제품인 보틀은 뛰어난 성능, 매끈한 실루엣,
+                                    다양한 아름다운 디자인 컬렉션으로 당신의 라이프를 특별하게 합니다.
+                                    우리의 일상에 수분을 공급하기에 이상적이며, 한손에 들어오는 슬림한 디자인으로 휴대하기 좋습니다.</p>
+                            </div><!-- .slide info -->
+                            <img src="img/find-your-swell-2.png" alt="">
+                        </div><!-- .swiper-slide end -->
 
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-3.png" alt="">
-                    </div><!-- .swiper-slide end -->
+                        <div class="swiper-slide">
+                            <div class="slide-info">
+                                <h2>TUMBLER</h2>
+                                <p>스웰 트래블러는 삼중 구조와 진공 단열을 적용하여 고품질 18/8 스테인리스 스틸로 제작되었습니다.
+                                    넓은 주입구와 두꺼운 테두리는 마시기 편리하며, 휘젓기도 용이합니다.</p>
+                            </div><!-- .slide info -->
+                            <img src="img/find-your-swell-3.png" alt="">
+                        </div><!-- .swiper-slide end -->
 
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-4.png" alt="">
-                    </div><!-- .swiper-slide end -->
-                </div><!-- .swiper-wrapper end -->
-                <div class="swiper-pagination"></div>
-            </div><!-- .mySwiper-02 end -->
+                        <div class="swiper-slide">
+                            <div class="slide-info">
+                                <h2>SALAD BOWL</h2>
+                                <p>스웰 샐러드볼은 다체로운 구성으로
+                                    샐러드를 가장 완벽하고 건강하게 즐길 수 있게 합니다.</p>
+                            </div><!-- .slide info -->
+                            <img src="img/find-your-swell-4.png" alt="">
+                        </div><!-- .swiper-slide end -->
+                    </div><!-- .swiper-wrapper end -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- .mySwiper-02 end -->
+            </div><!-- .inner end -->
         </section><!-- .find-your-swell end -->
 
         <section class="best-item">
@@ -375,14 +416,14 @@
                 <div class="item-01">
                     <a href="#">
                         <img src="img/promotion-1.gif" alt="">
-                        <h2 class="promotion-text-01">LIMITED EDITION 20% OFF</h2>
+                        <h3 class="promotion-text-01">LIMITED EDITION 20% OFF</h3>
                         <p>고급스러운 디자인의 시즌 한정 제품들을 20% 할인가에 만나보세요.</p>
                     </a>
                 </div><!-- .item end -->
                 <div class="item-02">
                     <a href="#">
                         <img src="img/promotion-2.jpg" alt="">
-                        <h2 class="promotion-text-02">FIND YOUR S’WELL</h2>
+                        <h3 class="promotion-text-02">FIND YOUR S’WELL</h3>
                         <p>당신만의 ‘스웰’을 찾아보세요!</p>
                     </a>
                 </div><!-- .item end -->
@@ -401,14 +442,14 @@
                 </div><!-- .item end -->
                 <div class="item">
                     <span class="story-text-02">
-                        S’well의 판매 수익금의 일부는 기부를 통해 나무를 심고<br/>
+                        S’well의 판매 수익금의 일부는 기부를 통해 나무를 심고<br />
                         지역사회에 후원해 환경과 사회에 이바지합니다.
                     </span><!-- .story-text-02 end -->
                     <img src="img/story-1.jpg" alt="">
                 </div><!-- .item end -->
                 <div class="item">
                     <span class="story-text-03">
-                        S’well은 다양하고 아름다운 디자인과 혁신적인 성능,<br/>
+                        S’well은 다양하고 아름다운 디자인과 혁신적인 성능,<br />
                         의미있는 목적의 힘을 입증하며 소비 방식을 변화시키고 있습니다.
                     </span><!-- .story-text-03 end -->
                     <img src="img/story-2.jpg" alt="">
@@ -421,7 +462,83 @@
                 </div><!-- .item end -->
             </div><!-- .list end -->
         </section><!-- .swell-story end -->
+
+        <section class="sns">
+            <h2>@swellkorea</h2>
+            <p>텀블러 그 이상의 가치, 스웰과 함께하세요.</p>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper-04">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/sns-1.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-2.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-3.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-4.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-5.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-6.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <img src="img/sns-7.jpg" alt="">
+                    </div><!-- .swiper-slide end -->
+
+                </div><!-- .swiper-wrapper end -->
+            </div><!-- .myswiper-04 end -->
+
+            <span class="more-btn"><a href="#">Follow Us</a></span>
+        </section><!-- .sns end -->
     </main><!-- .main end -->
+
+    <footer class="footer">
+        <ul class="bt_menu">
+            <li><a href="#">Find Your S’well</a></li>
+            <li><a href="#">Spacial</a></li>
+            <li><a href="#">Best</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Drink</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">CLUB S’well </a></li>
+        </ul><!-- .bt_menu end -->
+        <div class="site-info">
+            <div class="bt_image">
+                <img src="img/footer-1.jpg" alt="">
+                <img src="img/logo.png" alt="">
+            </div><!-- .bt_image end -->
+            <div class="bt_text">
+                <p class="service">
+                    고객센터 1899-1414 운영시간: 10:00 ~ 17:00 (주말 및 공휴일 휴무)
+                </p><!-- .service end -->
+                <span>주식회사 렙테크 대표자: 이준형</br>주소:서울특별시 송파구 법원로 128, 비동 511호(문정동, 문정역에스케이브이1(SKV1))</br>사업자 등록번호: 120-81-12978 통신판매 신고번호: 제 2016-서울송파-0768호 개인정보 보호책임자: 홍승민</br>이메일: reptech123@naver.com 입금계좌: 국민은행 025337-01-000875 입금자명: (주)렙테크</span>
+            </div><!-- .text end -->
+            <div class="sns_icon">
+                <img src="img/naver.png" alt="">
+                <img src="img/icon-instagram.png" alt="">
+            </div><!-- .sns_icon end -->
+            <div class="copyright">
+                Copyright(C) 스웰 코리아 공식 온라인 스토어. All Rights Reserved
+            </div><!-- .copyright end -->
+        </div><!-- .site-info end -->
+        <span class="bt_slogun">
+            FIND YOUR S’WELL
+        </span><!-- .bt_slogun end -->
+    </footer><!-- .footer end -->
 </body>
 
 </html>
